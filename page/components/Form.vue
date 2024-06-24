@@ -65,7 +65,7 @@ const getFormValues = () => {
 
 const submitForm = async () => {
   const valid = await validate();
-  if (!valid) {
+  if (!valid.valid) {
     return;
   }
   const payload = getFormValues();
