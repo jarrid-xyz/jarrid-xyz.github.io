@@ -36,11 +36,11 @@ const props = defineProps({
 });
 
 useSeoMeta({
-  title: props.post.title,
-  ogTitle: props.post.title,
-  description: props.post.description,
-  ogDescription: props.post.description,
-  ogImage: (props.post.img ? props.post.img : `${url.protocol}//${url.host}/images/og_image_square_1.png`),
+  title: () => props.post.title,
+  ogTitle: () => props.post.title,
+  description: () => props.post.description,
+  ogDescription: () => props.post.description,
+  ogImage: () => (props.post.img ? props.post.img : `${url.protocol}//${url.host}/images/og_image_square_1.png`),
   twitterCard: 'summary_large_image',
 })
 
