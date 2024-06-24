@@ -1,6 +1,10 @@
 <template>
   <template v-if="mdAndUp">
-    <v-container class="page fill-height page justify-center">
+    <v-container
+      class="page fill-height page justify-center"
+      ref="chat"
+      id="chat"
+    >
       <v-row>
         <v-col cols="12" md="6">
           <p class="text-h2">
@@ -61,10 +65,14 @@
       </v-col>
     </v-container>
     <NextButton
-      @click="$refs.form.$el.scrollIntoView({ behavior: 'smooth' })"
+      @click="$refs.chat.$el.scrollIntoView({ behavior: 'smooth' })"
       style="bottom: 0px !important"
     />
-    <v-container class="full-size fill-height justify-center pt-15" ref="form">
+    <v-container
+      class="full-size fill-height justify-center pt-15"
+      ref="chat"
+      id="chat"
+    >
       <Form />
     </v-container>
   </template>

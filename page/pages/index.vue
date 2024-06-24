@@ -1,5 +1,5 @@
 <template>
-  <v-container class="full-size min-height hero" ref="lets-chat" id="lets-chat">
+  <v-container class="full-size min-height hero" ref="intro" id="intro">
     <IntroHero />
   </v-container>
   <NextButtonWrappedForMobile :el="architectureRef" />
@@ -20,8 +20,7 @@
   </v-container>
 </template>
 
-<script setup>
-</script>
+<script setup></script>
 
 <script>
 export default {
