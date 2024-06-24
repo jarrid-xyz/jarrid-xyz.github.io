@@ -15,7 +15,11 @@
       />
       <v-card flat class="py-15 markdown-body">
         <ContentRenderer :value="doc" />
-        <DisqusComments :title="doc.title" v-if="!doc.disableComment" />
+        <DisqusComments
+          :title="doc.title"
+          :identifier="doc.title"
+          v-if="!doc.disableComment"
+        />
       </v-card>
     </ContentDoc>
   </v-container>

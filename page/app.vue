@@ -11,23 +11,24 @@
 <script setup lang="ts">
 const url = useRequestURL();
 
+const meta = {
+  title: "jarrid.xyz",
+  description:
+    "Let jarrid manage sensitive data for you. Jarrid is a collection of security, privacy and regulation aware developer tools for backend developers and data engineers. Our goal is to create common languages between security, legal and compliance and engineering teams.",
+  image: `${url.protocol}//${url.host}/images/og_image_square_1.png`
+};
+
+useSeoMeta({
+  title: meta.title,
+  ogTitle: meta.title,
+  description: meta.description,
+  ogDescription: meta.description,
+  ogImage: meta.image,
+  twitterCard: "summary_large_image"
+});
+
 useHead({
-  title: () => "jarrid.xyz",
-  meta: [
-    {
-      name: "description",
-      content:
-        "Let jarrid manage sensitive data for you. Jarrid is a collection of security, privacy and regulation aware developer tools for backend developers and data engineers. Our goal is to create common languages between security, legal and compliance and engineering teams."
-    },
-    {
-      name: "og:title",
-      content: "jarrid"
-    },
-    {
-      name: "og:image",
-      content: `${url.protocol}//${url.host}/images/og_image_square_1.png`
-    }
-  ]
+  title: () => "jarrid.xyz"
 });
 </script>
 
