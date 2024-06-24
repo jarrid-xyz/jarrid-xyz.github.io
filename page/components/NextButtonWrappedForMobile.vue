@@ -4,8 +4,8 @@
   </template>
   <template v-else>
     <NextButton
-      @click="el.scrollIntoView({ behavior: 'smooth' })"
-      style="bottom: 25px !important"
+      @click="el.$el.scrollIntoView({ behavior: 'smooth' })"
+      style="bottom: 20px !important"
     />
   </template>
 </template>

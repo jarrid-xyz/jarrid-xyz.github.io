@@ -1,5 +1,5 @@
 <template>
-  <v-container class="page fill-height page">
+  <v-container class="page fill-height page pt-extra">
     <v-row>
       <v-col cols="12">
         <span class="text-h2">Articles</span>
@@ -9,12 +9,7 @@
           <v-col cols="12" md="4" v-if="article.visible != false">
             <v-card :to="{ path: article._path }" class="article text-black">
               <div class="image">
-                <v-img
-                  :src="article.img ? article.img : defaultImage"
-                  cover
-                  :height="image.height"
-                  :width="image.width"
-                />
+                <v-img :src="article.img ? article.img : Logo" cover />
               </div>
               <v-card-title class="text-wrap">
                 {{ article.title }}
@@ -32,12 +27,7 @@
       <v-col cols="12" md="4">
         <v-card class="article d-flex flex-column">
           <div class="image">
-            <v-img
-              cover
-              :src="Logo"
-              :height="image.height"
-              :width="image.width"
-            />
+            <v-img cover :src="Logo" />
           </div>
           <v-card-title>Learn more?</v-card-title>
           <v-card-text>
@@ -75,24 +65,20 @@ export default {
   name: "Articles",
   data() {
     return {
-      image: {
-        height: 200,
-        width: 400
-      },
       defaultImage: Logo
     };
   }
 };
 </script>
 <style scoped>
+.pt-extra {
+  padding-top: 100px;
+}
 .article {
   min-height: 420px;
 }
-.article-img {
-  height: 200px;
-}
 .image {
   height: 200px;
-  width: 400px;
+  max-width: 400px;
 }
 </style>
