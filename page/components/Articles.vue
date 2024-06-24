@@ -10,16 +10,10 @@
             <v-card :to="{ path: article._path }" class="article text-black">
               <div class="image">
                 <v-img
-                  v-if="article.img"
-                  :src="article.img"
+                  :src="article.img ? article.img : defaultImage"
                   cover
                   :height="image.height"
                   :width="image.width"
-                />
-                <img
-                  v-else
-                  :src="getImageUrl(defaultImage)"
-                  style="height: 100%; width: 100%"
                 />
               </div>
               <v-card-title class="text-wrap">
@@ -85,7 +79,7 @@ export default {
         height: 200,
         width: 400
       },
-      defaultImage: "../assets/images/og_image_wide_large_1.png"
+      defaultImage: Logo
     };
   }
 };
