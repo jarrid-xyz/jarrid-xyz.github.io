@@ -9,6 +9,8 @@
 </template>
 
 <script setup lang="ts">
+const url = useRequestURL();
+
 useHead({
   title: () => "jarrid.xyz",
   meta: [
@@ -23,7 +25,7 @@ useHead({
     },
     {
       name: "og:image",
-      content: "/logo_square.png"
+      content: `${url.protocol}//${url.host}/images/og_image_square_1.png`
     }
   ]
 });

@@ -6,7 +6,9 @@
           <v-img src="~/assets/images/jarrid_logo_black.png" class="mx-2" />
         </v-avatar>
 
-        <v-app-bar-title class="ml-2 my-auto"> Jarrid </v-app-bar-title>
+        <v-app-bar-title class="ml-2 my-auto text-black">
+          Jarrid
+        </v-app-bar-title>
       </div>
     </RouterLink>
   </v-app-bar>
