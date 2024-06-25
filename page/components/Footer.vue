@@ -68,7 +68,7 @@ export default {
           links: [
             {
               name: "Intro",
-              link: { to: { path: "/", hash: "#lets-chat" } }
+              link: { to: { path: "/", hash: "#chat" } }
             },
             {
               name: "Architecture",

@@ -1,7 +1,6 @@
 <template>
   <v-card flat rounded="0" class="min-width">
-    <v-img cover :src="post.img" v-if="post.img" />
-    <img :src="getImageUrl(defaultImage)" v-else style="height: 100%; width: 100%;"/>
+    <v-img cover :src="post.img ? post.img : Logo" />
     <v-card-title class="text-h3 text-wrap px-0">
       {{ post.title }}
     </v-card-title>
@@ -21,6 +20,7 @@
 </template>
 
 <script setup>
+import Logo from "~/assets/images/og_image_wide_large_1.png";
 import moment from "moment";
 
 const url = useRequestURL();
@@ -36,23 +36,21 @@ const props = defineProps({
 });
 
 useSeoMeta({
-  title: props.post.title,
-  ogTitle: props.post.title,
-  description: props.post.description,
-  ogDescription: props.post.description,
-  ogImage: (props.post.img ? props.post.img : `${url.protocol}//${url.host}/images/og_image_square_1.png`),
+  title: () => props.post.title,
+  ogTitle: () => props.post.title,
+  description: () => props.post.description,
+  ogDescription: () => props.post.description,
+  ogImage: () => (props.post.img ? props.post.img : `${url.protocol}//${url.host}/images/og_image_square_1.png`),
   twitterCard: 'summary_large_image',
 })
 
-const getImageUrl = (img) => {
-  return new URL(img, import.meta.url)
-}
+
 const formatDate = (date) => {
   return moment(date).format("YYYY-MM-DD");
 }
 
 defineExpose({
-  getImageUrl,
+  Logo,
   formatDate
 })
 </script>
