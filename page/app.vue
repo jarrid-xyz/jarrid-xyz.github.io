@@ -9,8 +9,6 @@
 </template>
 
 <script setup lang="ts">
-const url = useRequestURL();
-
 const meta = {
   title: "jarrid.xyz",
   description:
@@ -18,18 +16,29 @@ const meta = {
   image: "https://jarrid.xyz/images/og_image_square_1.png"
 };
 
-useSeoMeta({
-  title: () => meta.title,
-  ogTitle: () => meta.title,
-  description: () => meta.description,
-  ogDescription: () => meta.description,
-  ogImage: () => meta.image,
-  twitterCard: "summary_large_image"
-});
-
-useHead({
-  title: () => "jarrid.xyz"
-});
+useHead(
+  {
+    title: () => meta.title,
+    meta: [
+      {
+        property: "og:title",
+        content: meta.title
+      },
+      {
+        name: "description",
+        property: "og:description",
+        content: meta.description
+      },
+      {
+        name: "image",
+        property: "og:image",
+        content: meta.image
+      },
+      { name: "twitter:card", content: "summary" }
+    ]
+  },
+  { tagPriority: "critical" }
+);
 </script>
 
 <style>
