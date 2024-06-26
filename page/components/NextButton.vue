@@ -14,14 +14,4 @@ export default {
 
 <style scoped>
 /* Add your component styles here */
-@media (min-width: 1024px) {
-  .next {
-    position: relative;
-    bottom: 100px;
-  }
-}
-.next {
-  position: relative;
-  bottom: 100px;
-}
 </style>

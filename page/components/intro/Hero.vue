@@ -5,7 +5,7 @@
       ref="chat"
       id="chat"
     >
-      <v-row>
+      <v-row class="pt-15">
         <v-col cols="12" md="6">
           <p class="text-h2">
             {{ title }}
