@@ -57,7 +57,7 @@
       class="full-size fill-height justify-center pt-15"
       ref="features"
     >
-      <v-col cols="12" v-for="item in items" :key="item.title">
+      <v-col cols="12" v-for="item in items" :key="item.title" class="px-0">
         <p class="text-h6 text-capitalize">
           {{ item.title }}
         </p>
@@ -69,7 +69,7 @@
       style="bottom: 0px !important"
     />
     <v-container
-      class="full-size fill-height justify-center pt-15"
+      class="full-size fill-height justify-center pt-15 px-0"
       ref="chat"
       id="chat"
     >

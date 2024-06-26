@@ -14,4 +14,8 @@ export default {
 
 <style scoped>
 /* Add your component styles here */
+.next {
+  position: relative;
+  bottom: 60px;
+}
 </style>
