@@ -124,7 +124,7 @@ keyper deploy apply --usage CREATE_KEY --backend LOCAL --stack GCP
 
 ### Monday Release
 
-Jarrid drops new feature release every Monday. Stay tuned and please share any feedback with us to help us build better ["Keyper"](https://github.com/apiobuild/jarrid-keyper) for user data.
+Jarrid drops new feature release every Monday. Stay tuned and please share any feedback with us. Together, we can build a better ["Keyper"](https://github.com/apiobuild/jarrid-keyper) for our data.
 
 ### Next Week
 
