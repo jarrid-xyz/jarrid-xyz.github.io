@@ -30,17 +30,17 @@
   p {
     padding-bottom: 30px;
   }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
 }
 .pt-extra {
   padding-top: 100px;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-top: 20px;
-  margin-bottom: 5px;
 }
 </style>
