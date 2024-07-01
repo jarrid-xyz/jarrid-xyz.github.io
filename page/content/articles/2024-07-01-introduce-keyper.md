@@ -1,10 +1,10 @@
 ---
 title: "Keyper by Jarrid: Simplify Crypto Key Management"
-description: We are excited to announce the release of Keyper, a powerful multi-platform Kotlin (Java) based CLI tool designed to simplify cryptokey management and deployment with just a few commands. Think of Keyper as the Stripe for crypto keys.
+description: Keyper is a powerful multi-platform Kotlin (Java) based CLI tool designed to simplify cryptokey management and deployment with just a few commands. Think of Keyper as the Stripe for crypto keys.
 author: Lulu Cheng
 authorLink: https://l1990790120.github.io/about
 img: https://images.pexels.com/photos/5474292/pexels-photo-5474292.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
-date: 2024-07-21
+date: 2024-07-01
 tags: ["Announcement", "Release"]
 ---
 
