@@ -39,6 +39,12 @@
     margin-top: 20px;
     margin-bottom: 5px;
   }
+  pre {
+    overflow-x: auto;
+  }
+  ul {
+    list-style-position: inside;
+  }
 }
 .pt-extra {
   padding-top: 100px;
