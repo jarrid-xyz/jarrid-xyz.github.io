@@ -5,7 +5,7 @@
         <span class="text-h2">Articles</span>
       </v-col>
       <ContentList path="/articles" v-slot="{ list }">
-        <template v-for="article in list" :key="article._path">
+        <template v-for="article in sortByDate(list)" :key="article._path">
           <v-col cols="12" md="4" v-if="article.visible != false">
             <v-card :to="{ path: article._path }" class="article text-black">
               <div class="image">
@@ -67,6 +67,20 @@ export default {
     return {
       defaultImage: Logo
     };
+  },
+  methods: {
+    sortByDate(list) {
+      list.sort((a, b) => {
+        if (a.date < b.date) {
+          return 1;
+        }
+        if (a.date > b.date) {
+          return -1;
+        }
+        return 0;
+      });
+      return list;
+    }
   }
 };
 </script>

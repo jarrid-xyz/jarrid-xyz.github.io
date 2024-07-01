@@ -13,14 +13,14 @@
         }"
         :url="doc._path"
       />
-      <v-card flat class="py-15 markdown-body">
+      <div class="py-15 markdown-body">
         <ContentRenderer :value="doc" />
         <DisqusComments
           :title="doc.title"
           :identifier="doc.title"
           v-if="!doc.disableComment"
         />
-      </v-card>
+      </div>
     </ContentDoc>
   </v-container>
 </template>
@@ -29,6 +29,15 @@
 .markdown-body {
   p {
     padding-bottom: 30px;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 20px;
+    margin-bottom: 5px;
   }
 }
 .pt-extra {
