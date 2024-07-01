@@ -51,6 +51,10 @@ export default defineNuxtConfig({
       path: "~/components"
     }
   ],
+  robots: {
+    UserAgent: "*",
+    Disallow: ""
+  },
   site: {
     url: "https://jarrid.xyz",
     name: "jarrid.xyz",
