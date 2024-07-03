@@ -14,6 +14,10 @@
   <v-container class="full-size min-height" ref="about" id="about">
     <IntroAbout />
   </v-container>
+  <NextButtonWrappedForMobile :el="contactRef" />
+  <v-container class="full-size min-height" ref="contact" id="contact">
+    <IntroContact />
+  </v-container>
   <NextButtonWrappedForMobile :el="articlesRef" />
   <v-container class="full-size min-height" ref="articles" id="articles">
     <Articles />
@@ -29,13 +33,15 @@ export default {
     return {
       architectureRef: null,
       aboutRef: null,
-      articlesRef: null
+      articlesRef: null,
+      contactRef: null
     };
   },
   mounted() {
     this.architectureRef = this.$refs.architecture;
     this.aboutRef = this.$refs.about;
     this.articlesRef = this.$refs.articles;
+    this.contactRef = this.$refs.contact;
   }
 };
 </script>
