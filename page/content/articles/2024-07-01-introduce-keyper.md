@@ -120,6 +120,13 @@ keyper deploy apply --usage CREATE_KEY --backend LOCAL --stack GCP
 ::Asciinema{id="asciicast-666353"}
 ::
 
+### Try it Yourself
+
+Library is free to use here: https://github.com/apiobuild/jarrid-keyper
+
+::LetsTalkAndSubscribe{ctaText="We know this is an early (buggy) release and we'd love to help you set it up. Or if you have any feedback we'd love to talk to you."}
+::
+
 ## Future Release
 
 ### Monday Release
