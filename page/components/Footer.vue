@@ -100,6 +100,11 @@ export default {
       ],
       socials: [
         {
+          name: "github",
+          link: "https://github.com/apiobuild?q=jarrid&type=all&language=&sort=",
+          icon: "fab fa-github"
+        },
+        {
           name: "linkedin",
           link: "https://www.linkedin.com/company/apiobuild/",
           icon: "fab fa-linkedin"
