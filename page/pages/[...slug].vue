@@ -42,6 +42,7 @@
   pre {
     overflow-x: auto;
   }
+  ol,
   ul {
     list-style-position: inside;
   }
