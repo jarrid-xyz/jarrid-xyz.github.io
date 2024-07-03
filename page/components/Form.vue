@@ -23,7 +23,6 @@
               :disabled="submitted"
             >
             </component>
-            <!-- <v-text-field> </v-text-field> -->
           </v-col>
         </v-row>
       </v-card-text>
