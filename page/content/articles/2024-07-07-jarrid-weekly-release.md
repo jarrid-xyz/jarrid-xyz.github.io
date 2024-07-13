@@ -8,14 +8,14 @@ date: 2024-07-07
 tags: ["Announcement", "Release"]
 ---
 
-[Keyper](https://github.com/apiobuild/jarrid-keyper) is a powerful multi-platform Kotlin (Java) based CLI tool designed to simplify crypto key management and deployment with just a few commands. Think of Keyper as the Stripe for crypto keys. Every week, we introduce new features to help make security easier for developers and engineers worldwide.
+[Keyper](https://github.com/jarrid-xyz/keyper) is a powerful multi-platform Kotlin (Java) based CLI tool designed to simplify crypto key management and deployment with just a few commands. Think of Keyper as the Stripe for crypto keys. Every week, we introduce new features to help make security easier for developers and engineers worldwide.
 
 ::LetsTalkAndSubscribe{ctaText="Are you working on Fintech, Crypto or Healthcare projects? We'd love to help. Talk to us now."}
 ::
 
 ## Feature Release
 
-1. [Keyper](https://github.com/apiobuild/jarrid-keyper/) is now containerized. You can run it from anywhere: laptops, Kubernetes, or any CI/CD pipelines, all with the same simple configuration.
+1. [Keyper](https://github.com/jarrid-xyz/keyper/) is now containerized. You can run it from anywhere: laptops, Kubernetes, or any CI/CD pipelines, all with the same simple configuration.
 2. Encrypt/decrypt is now fully supported via library/cli. Key management is now as simple as 3 simple commands.
 
 ```bash
@@ -35,7 +35,7 @@ Encrypting and decrypting data couldn't get easier than this. [Jarrid's](https:/
 
 ## Demo
 
-Enough talk. Here are the end-to-end demos with [Keyper's](https://github.com/apiobuild/jarrid-keyper) Docker CLI.
+Enough talk. Here are the end-to-end demos with [Keyper's](https://github.com/jarrid-xyz/keyper) Docker CLI.
 
 ### Create Key
 
@@ -58,7 +58,7 @@ Enough talk. Here are the end-to-end demos with [Keyper's](https://github.com/ap
 
 ### Try it Yourself
 
-Library is free to use here: https://github.com/apiobuild/jarrid-keyper
+Library is free to use here: https://github.com/jarrid-xyz/keyper
 
 ::LetsTalkAndSubscribe{ctaText="We know this is an early (buggy) release and we'd love to help you set it up. If you have any feedback we'd love to talk to you."}
 ::
@@ -71,14 +71,14 @@ Our plan is to further streamline key management with IAM role support directly 
 
 ### Key Sharing
 
-Currently, [Keyper](https://github.com/apiobuild/jarrid-keyper/) only supports symmetric keys. Sharing symmetric key is typically achieved with assymetric key encryption. A hybrid approach ensures better performance and efficiency in terms of encryption/decryption while allowing safe sharing of the symmetric key itself. Sounds complicated? Don't worry, we will be wrapping all these exchange in [Keyper](https://github.com/apiobuild/jarrid-keyper/) so that it's as simple as `keyper key share <...>` for developers to share keys.
+Currently, [Keyper](https://github.com/jarrid-xyz/keyper/) only supports symmetric keys. Sharing symmetric key is typically achieved with assymetric key encryption. A hybrid approach ensures better performance and efficiency in terms of encryption/decryption while allowing safe sharing of the symmetric key itself. Sounds complicated? Don't worry, we will be wrapping all these exchange in [Keyper](https://github.com/jarrid-xyz/keyper/) so that it's as simple as `keyper key share <...>` for developers to share keys.
 
 ### Docs
 
-We understand that blog posts and READMEs aren't necessarily the easiest to search or provide a full picture of how [Keyper](https://github.com/apiobuild/jarrid-keyper/) CLI and library work. We will be providing more comprehensive documentation as we continue to add functionalities next week.
+We understand that blog posts and READMEs aren't necessarily the easiest to search or provide a full picture of how [Keyper](https://github.com/jarrid-xyz/keyper/) CLI and library work. We will be providing more comprehensive documentation as we continue to add functionalities next week.
 
 ## Summary
 
 We are super excited about the progress we've made so far and are eagerly looking for projects to help us further prove out this concept. The library itself is completely free, with the goal of simplifying security for developers and providing a more documented flow. This allows you to easily meet various compliance, regulation, and security requirements at the same time. Of the various crypto key management libraries such as [tink](https://developers.google.com/tink) and [libsodium](https://doc.libsodium.org/), we are the ONLY library that allows you to directly leverage any cloud-based KMS (via [Terraform](https://www.terraform.io/)) with clear documentation and traceability without added complexity or burden for application and data engineers to understand how crypto keys work under the hood. 
 
-Give [Keyper](https://github.com/apiobuild/jarrid-keyper/) a try and ask us any questions. We’d love to help you build secure applications and data pipelines without added complexity.
+Give [Keyper](https://github.com/jarrid-xyz/keyper/) a try and ask us any questions. We’d love to help you build secure applications and data pipelines without added complexity.
