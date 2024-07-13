@@ -21,17 +21,8 @@
 
               <v-row class="py-3 px-3">
                 <v-col class="d-md-flex justify-end text-right">
-                  <div
-                    v-for="button in three_buttons"
-                    :key="button.text"
-                    class="pl-5 pt-3"
-                  >
-                    <v-btn
-                      :href="button.to.href"
-                      target="_blank"
-                      class="cta-button"
-                      size="large"
-                    >
+                  <div v-for="button in three_buttons" :key="button.text" class="pl-5 pt-3">
+                    <v-btn :href="button.to.href" target="_blank" class="cta-button" size="large">
                       {{ button.text }}
                     </v-btn>
                   </div>
@@ -101,8 +92,8 @@ export default {
         {
           name: "github",
           title: "Stuff we've built. 100% free.",
-          link: "https://github.com/apiobuild?q=jarrid&type=all&language=&sort=",
-          handle: "apiobuild",
+          link: "https://github.com/jarrid-xyz",
+          handle: "jarrid-xyz",
           icon: "fab fa-github"
         },
         {
@@ -136,6 +127,7 @@ export default {
 .contact {
   min-height: 232px;
 }
+
 .cta-button {
   background-color: rgb(var(--v-theme-primary));
   color: black;

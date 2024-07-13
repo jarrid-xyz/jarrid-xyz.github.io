@@ -8,7 +8,7 @@ date: 2024-07-01
 tags: ["Announcement", "Release"]
 ---
 
-Jarrid is excited to announce the release of [Keyper](https://github.com/apiobuild/jarrid-keyper), a powerful multi-platform Kotlin (Java) based CLI tool designed to simplify crypto key management and deployment with just a few commands. Think of Keyper as the Stripe for crypto keys. We know there are many features to be added, but we'd like to share this early release and welcome your feedback.
+Jarrid is excited to announce the release of [Keyper](https://github.com/jarrid-xyz/keyper), a powerful multi-platform Kotlin (Java) based CLI tool designed to simplify crypto key management and deployment with just a few commands. Think of Keyper as the Stripe for crypto keys. We know there are many features to be added, but we'd like to share this early release and welcome your feedback.
 
 Keyper manages cryptokeys in two layers: Key Configuration > Terraform Integration.
 
@@ -53,7 +53,7 @@ keyper key --usage CREATE_KEY --backend LOCAL --stack GCP
 
 - **`--usage CREATE_KEY`**:
 
-  Trigger creation of a new crypto key. Future functionality includes: SHARE_KEY, ENCRYPT, DECRYPT. Track progress [here](https://github.com/apiobuild/jarrid-keyper/issues/4).
+  Trigger creation of a new crypto key. Future functionality includes: SHARE_KEY, ENCRYPT, DECRYPT. Track progress [here](https://github.com/orgs/jarrid-xyz/projects/1).
 
 - **`--backend LOCAL`**:
 
@@ -65,7 +65,7 @@ keyper key --usage CREATE_KEY --backend LOCAL --stack GCP
 
 ## Terraform Integration
 
-[Keyper](ttps://github.com/apiobuild/jarrid-keyper) wraps the creation and management of resources in [Terraform](https://www.terraform.io/). This allows for multi-cloud support, state management, and dependency resolution. Currently, we support GCP, with plans to add AWS soon. Terraform comes with the following benefits:
+[Keyper](https://github.com/jarrid-xyz/keyper) wraps the creation and management of resources in [Terraform](https://www.terraform.io/). This allows for multi-cloud support, state management, and dependency resolution. Currently, we support GCP, with plans to add AWS soon. Terraform comes with the following benefits:
 
 - **Multi Cloud/Platform Support**
 
@@ -122,7 +122,7 @@ keyper deploy apply --usage CREATE_KEY --backend LOCAL --stack GCP
 
 ### Try it Yourself
 
-Library is free to use here: https://github.com/apiobuild/jarrid-keyper
+Library is free to use here: https://github.com/jarrid-xyz/keyper
 
 ::LetsTalkAndSubscribe{ctaText="We know this is an early (buggy) release and we'd love to help you set it up. Or if you have any feedback we'd love to talk to you."}
 ::
@@ -131,11 +131,11 @@ Library is free to use here: https://github.com/apiobuild/jarrid-keyper
 
 ### Monday Release
 
-Jarrid drops new feature release every Monday. Stay tuned and please share any feedback with us. Together, we can build a better ["Keyper"](https://github.com/apiobuild/jarrid-keyper) for our data.
+Jarrid drops new feature release every Monday. Stay tuned and please share any feedback with us. Together, we can build a better ["Keyper"](https://github.com/jarrid-xyz/keyper) for our data.
 
 ### Next Week
 
-We will add additional feature and talk about how to use [Keyper](https://github.com/apiobuild/jarrid-keyper) APIs to manage the end to end process to encrypt and decrypt the data.
+We will add additional feature and talk about how to use [Keyper](https://github.com/jarrid-xyz/keyper) APIs to manage the end to end process to encrypt and decrypt the data.
 
 1. Create a crypto key with TTL
 2. Encrypt data
