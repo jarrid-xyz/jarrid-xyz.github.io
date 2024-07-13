@@ -55,12 +55,12 @@ export default {
     return {
       three_buttons: [
         {
-          text: "Try Now",
-          to: { href: "https://github.com/apiobuild/jarrid-keyper" }
+          text: "Demo",
+          to: { href: "https://jarrid.xyz/keyper/#demo" }
         },
         {
-          text: "Demo",
-          to: { href: "/articles/2024-07-01-introduce-keyper#demo" }
+          text: "Github",
+          to: { href: "https://github.com/jarrid-xyz/keyper" }
         },
         {
           text: "Questions? Talk to Us",
