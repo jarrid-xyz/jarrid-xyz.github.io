@@ -62,6 +62,9 @@ export default defineNuxtConfig({
       "Let jarrid manage sensitive data for you. Jarrid is a collection of security, privacy and regulation aware developer tools for backend developers and data engineers. Our goal is to create common languages between security, legal and compliance and engineering teams.",
     defaultLocale: "en"
   },
+  sitemap: {
+    xsl: false
+  },
   content: {
     contentHead: false,
     highlight: {
