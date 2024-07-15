@@ -51,7 +51,7 @@ const getImageUrl = (img) => {
   return new URL(img, import.meta.url);
 };
 const formatDate = (date) => {
-  return moment(date).format("YYYY-MM-DD");
+  return moment(date).utc().format("YYYY-MM-DD");
 };
 
 defineExpose({
@@ -88,9 +88,11 @@ export default {
 .pt-extra {
   padding-top: 100px;
 }
+
 .article {
   min-height: 420px;
 }
+
 .image {
   height: 200px;
   max-width: 400px;

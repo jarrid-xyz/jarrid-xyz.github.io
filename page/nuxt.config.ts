@@ -9,12 +9,16 @@ export default defineNuxtConfig({
   css: ["~/assets/css/main.css"],
   buildModules: ["@nuxtjs/vuetify"],
   modules: [
+    "@nuxt/image",
+    "nuxt-content-assets",
     "@nuxt/content",
     "nuxt-disqus",
     "nuxt-gtag",
     "@nuxtjs/robots",
     "@nuxtjs/sitemap",
-    "@nuxt/image"
+  ],
+  extends: [
+    'node_modules/nuxt-content-assets/cache',
   ],
   pages: true,
   hooks: {

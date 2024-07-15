@@ -71,7 +71,7 @@ Our plan is to further streamline key management with IAM role support directly 
 
 ### Key Sharing
 
-Currently, [Keyper](https://github.com/jarrid-xyz/keyper/) only supports symmetric keys. Sharing symmetric key is typically achieved with assymetric key encryption. A hybrid approach ensures better performance and efficiency in terms of encryption/decryption while allowing safe sharing of the symmetric key itself. Sounds complicated? Don't worry, we will be wrapping all these exchange in [Keyper](https://github.com/jarrid-xyz/keyper/) so that it's as simple as `keyper key share <...>` for developers to share keys.
+Currently, [Keyper](https://github.com/jarrid-xyz/keyper/) only supports symmetric keys. Sharing symmetric key is typically achieved with asymmetric key encryption. A hybrid approach ensures better performance and efficiency in terms of encryption/decryption while allowing safe sharing of the symmetric key itself. Sounds complicated? Don't worry, we will be wrapping all these exchange in [Keyper](https://github.com/jarrid-xyz/keyper/) so that it's as simple as `keyper key share <...>` for developers to share keys.
 
 ### Docs
 
