@@ -19,6 +19,7 @@
     "@nuxtjs/sitemap": "^5.2.0",
     "moment": "^2.30.1",
     "nuxt": "^3.12.2",
+    "nuxt-content-assets": "^1.4.4",
     "nuxt-disqus": "^1.0.1",
     "nuxt-gtag": "^2.0.6",
     "rehype-autolink-headings": "^7.1.0",

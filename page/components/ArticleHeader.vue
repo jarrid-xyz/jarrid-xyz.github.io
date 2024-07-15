@@ -40,17 +40,17 @@ useHead(
     meta: [
       {
         property: "og:title",
-        content:  props.post.title
+        content: props.post.title
       },
       {
         name: "description",
         property: "og:description",
-        content:  props.post.description
+        content: props.post.description
       },
       {
         name: "image",
         property: "og:image",
-        content:  (props.post.img ? props.post.img : "https://jarrid.xyz/images/og_image_square_1.png")
+        content: (props.post.img ? props.post.img : "https://jarrid.xyz/images/og_image_square_1.png")
       },
       { name: "twitter:card", content: "summary" }
     ]
@@ -59,7 +59,7 @@ useHead(
 );
 
 const formatDate = (date) => {
-  return moment(date).format("YYYY-MM-DD");
+  return moment(date).utc().format("YYYY-MM-DD");
 }
 
 defineExpose({
