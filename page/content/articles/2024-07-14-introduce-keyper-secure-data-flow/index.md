@@ -1,6 +1,6 @@
 ---
 title: "Keyper by Jarrid: Introduce Secure Data Flow"
-description: 
+description: Check out secure data flow architectures, end-to-end encryption with TEE, and managed vaults with homomorphic keys. Learn how Keyper can help protect your company in incidents like the Snowflake data breach.
 author: Lulu Cheng
 authorLink: https://l1990790120.github.io/about
 img: https://images.pexels.com/photos/6238297/pexels-photo-6238297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
