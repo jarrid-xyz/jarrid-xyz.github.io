@@ -113,3 +113,6 @@ With the release of [Keyper v0.0.1](https://github.com/jarrid-xyz/keyper/release
 
 For detailed instructions and further examples, please refer to our updated documentation [here](https://jarrid.xyz/keyper/resource/key/){:target=_blank}.
 
+::LetsTalkAndSubscribe{ctaText="Trying to improve data security implementation to your internal data infrastructure? We'd love to help. Talk to us now."}
+::
+
