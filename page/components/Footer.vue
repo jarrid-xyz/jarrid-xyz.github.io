@@ -68,60 +68,68 @@ export default {
           links: [
             {
               name: "Intro",
-              link: { to: { path: "/", hash: "#chat" } }
+              link: { to: { path: "/", hash: "#chat" } },
             },
             {
               name: "Architecture",
-              link: { to: { path: "/", hash: "#architecture" } }
+              link: { to: { path: "/", hash: "#architecture" } },
             },
             {
               name: "About",
-              link: { to: { path: "/", hash: "#about" } }
+              link: { to: { path: "/", hash: "#about" } },
+            },
+            {
+              name: "Keyper",
+              link: { to: { path: "/", hash: "#keyper" } },
+            },
+            {
+              name: "Contact",
+              link: { to: { path: "/", hash: "#contact" } },
             },
             {
               name: "Articles",
-              link: { to: { path: "/articles" } }
-            }
-          ]
+              link: { to: { path: "/articles" } },
+            },
+          ],
         },
         {
           name: "Legal",
           links: [
             {
               name: "Privacy Policy",
-              link: { to: { path: "/articles/privacy-policy" } }
+              link: { to: { path: "/articles/privacy-policy" } },
             },
             {
               name: "Terms of Service",
-              link: { to: { path: "/articles/terms-of-service" } }
-            }
-          ]
-        }
+              link: { to: { path: "/articles/terms-of-service" } },
+            },
+          ],
+        },
       ],
       socials: [
         {
           name: "github",
           link: "https://github.com/jarrid-xyz",
-          icon: "fab fa-github"
+          icon: "fab fa-github",
         },
         {
           name: "linkedin",
           link: "https://www.linkedin.com/company/apiobuild/",
-          icon: "fab fa-linkedin"
+          icon: "fab fa-linkedin",
         },
         {
           name: "email",
           link: "mailto:luluc@jarrid.xyz",
-          icon: "fas fa-envelope"
+          icon: "fas fa-envelope",
         },
         {
           name: "instagram",
           link: "https://www.instagram.com/jarrid.xyz",
-          icon: "fab fa-instagram"
-        }
-      ]
+          icon: "fab fa-instagram",
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 
@@ -129,9 +137,11 @@ export default {
 .form {
   max-width: 300px;
 }
+
 .full-width {
   width: 100%;
 }
+
 a {
   color: black;
 }

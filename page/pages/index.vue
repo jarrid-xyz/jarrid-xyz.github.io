@@ -14,6 +14,10 @@
   <v-container class="full-size min-height" ref="about" id="about">
     <IntroAbout />
   </v-container>
+  <NextButtonWrappedForMobile :el="keyperRef" />
+  <v-container class="full-size min-height" ref="keyper" id="keyper">
+    <IntroKeyper />
+  </v-container>
   <NextButtonWrappedForMobile :el="contactRef" />
   <v-container class="full-size min-height" ref="contact" id="contact">
     <IntroContact />
@@ -34,15 +38,16 @@ export default {
       architectureRef: null,
       aboutRef: null,
       articlesRef: null,
-      contactRef: null
+      contactRef: null,
     };
   },
   mounted() {
     this.architectureRef = this.$refs.architecture;
     this.aboutRef = this.$refs.about;
-    this.articlesRef = this.$refs.articles;
+    this.keyperRef = this.$refs.keyper;
     this.contactRef = this.$refs.contact;
-  }
+    this.articlesRef = this.$refs.articles;
+  },
 };
 </script>
 
@@ -50,6 +55,7 @@ export default {
 .min-height {
   min-height: 100vh;
 }
+
 .hero {
   background-color: rgb(var(--v-theme-primary));
 }

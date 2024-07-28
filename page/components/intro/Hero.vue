@@ -95,31 +95,27 @@ export default {
         {
           title: "Create Transparency and Trust with Your Users",
           description:
-            "Users can see and configure the data they are sharing with you, fostering transparency and trust."
+            "Users can see and configure the data they are sharing with you, fostering transparency and trust.",
         },
         {
           title: "Managed Security, Governance, Privacy, and Compliance",
           description:
-            "Simplify your infosec, governance, privacy, legal, and compliance efforts with our developer-friendly open source SDKs."
+            "Simplify your infosec, governance, privacy, legal, and compliance efforts with our developer-friendly open source SDKs.",
         },
         {
           title: "Privacy-Preserving Data Analytics and AI",
           description:
-            "Achieve high performance and cost-effective data analytics and AI on encrypted data without compromise privacy and security."
+            "Achieve high performance and cost-effective data analytics and AI on encrypted data without compromise privacy and security.",
         },
         {
           title: "Data Marketplace",
           description:
-            "Our platform enables companies to exchange data collected from other companies with clear user consent."
-        }
-      ]
+            "Our platform enables companies to exchange data collected from other companies with clear user consent.",
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 
-<style scoped>
-.fill-height-intro {
-  height: 100%;
-}
-</style>
+<style scoped></style>

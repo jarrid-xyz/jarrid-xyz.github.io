@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: "NextButton"
+  name: "NextButton",
 };
 </script>
 
@@ -16,6 +16,6 @@ export default {
 /* Add your component styles here */
 .next {
   position: relative;
-  bottom: 60px;
+  bottom: 55px;
 }
 </style>
