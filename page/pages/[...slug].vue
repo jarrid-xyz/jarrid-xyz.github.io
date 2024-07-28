@@ -1,18 +1,25 @@
 <template>
   <v-container class="pt-extra">
     <ContentDoc v-slot="{ doc }">
-      <ArticleHeader :post="{
-        title: doc.title,
-        description: doc.description,
-        img: doc.img,
-        author: doc.author,
-        authorLink: doc.authorLink,
-        date: doc.date,
-        tags: doc.tags
-      }" :url="doc._path" />
+      <ArticleHeader
+        :post="{
+          title: doc.title,
+          description: doc.description,
+          img: doc.img,
+          author: doc.author,
+          authorLink: doc.authorLink,
+          date: doc.date,
+          tags: doc.tags,
+        }"
+        :url="doc._path"
+      />
       <div class="py-15 markdown-body">
         <ContentRenderer :value="doc" />
-        <DisqusComments :title="doc.title" :identifier="doc.title" v-if="!doc.disableComment" />
+        <DisqusComments
+          :title="doc.title"
+          :identifier="doc.title"
+          v-if="!doc.disableComment"
+        />
       </div>
     </ContentDoc>
   </v-container>
@@ -46,6 +53,26 @@
 
   img {
     max-width: 100%;
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+  table td {
+    padding: 5px;
+  }
+  table thead tr {
+    border: 1px solid #dddfe1;
+  }
+  table thead th {
+    padding: 10px;
+    border: 1px solid #dddfe1;
+  }
+  table tbody td {
+    border: 1px solid #dddfe1;
+  }
+  table tbody tr:nth-child(odd) {
+    background-color: #f9fafb;
   }
 }
 
