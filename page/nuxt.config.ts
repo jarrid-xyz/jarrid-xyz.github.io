@@ -6,8 +6,10 @@ export default defineNuxtConfig({
   build: {
     transpile: ["vuetify", "@nuxtjs/robots", "@nuxtjs/sitemap"],
   },
+
   css: ["~/assets/css/main.css"],
   buildModules: ["@nuxtjs/vuetify"],
+
   modules: [
     "@nuxt/image",
     "nuxt-content-assets",
@@ -17,8 +19,10 @@ export default defineNuxtConfig({
     "@nuxtjs/robots",
     "@nuxtjs/sitemap",
   ],
+
   extends: ["node_modules/nuxt-content-assets/cache"],
   pages: true,
+
   hooks: {
     "vite:extendConfig": (config) => {
       config.plugins.push(
@@ -28,16 +32,19 @@ export default defineNuxtConfig({
       );
     },
   },
+
   vuetify: {
     defaultAssets: {
       font: "Ubuntu",
     },
   },
+
   nitro: {
     prerender: {
       routes: ["/sitemap.xml", "/robots.txt"],
     },
   },
+
   vite: {
     ssr: {
       noExternal: ["vuetify"],
@@ -48,15 +55,18 @@ export default defineNuxtConfig({
       },
     },
   },
+
   components: [
     {
       path: "~/components",
     },
   ],
+
   robots: {
     UserAgent: "*",
     Disallow: "",
   },
+
   site: {
     url: "https://jarrid.xyz",
     name: "jarrid.xyz",
@@ -65,9 +75,11 @@ export default defineNuxtConfig({
     defaultLocale: "en",
     trailingSlash: true,
   },
+
   sitemap: {
     xsl: false,
   },
+
   content: {
     contentHead: false,
     highlight: {
@@ -81,9 +93,11 @@ export default defineNuxtConfig({
       rehypePlugins: ["rehype-autolink-headings"],
     },
   },
+
   disqus: {
     shortname: "apiobuild-com",
   },
+
   gtag: {
     id: "G-437EGHNNRF",
   },
