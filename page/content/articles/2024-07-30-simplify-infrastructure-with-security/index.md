@@ -3,7 +3,7 @@ title: "How Data Encryption Can Simplify Infrastructure Architecture"
 description: Learn how platform and security engineering teams can leverage Keyper's data encryption capabilities to improve security standards, simplify infrastructure architecture, and enhance developer velocity.
 author: Lulu Cheng
 authorLink: https://l1990790120.github.io/about
-img: https://images.pexels.com/photos/211151/pexels-photo-211151.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+img: https://images.pexels.com/photos/3785926/pexels-photo-3785926.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
 date: 2024-07-30
 tags: ["Industry", "Analysis"]
 ---
