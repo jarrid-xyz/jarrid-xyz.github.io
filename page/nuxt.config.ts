@@ -90,7 +90,10 @@ export default defineNuxtConfig({
     },
     markdown: {
       mdc: true,
-      rehypePlugins: ["rehype-autolink-headings"],
+      rehypePlugins: [
+        "rehype-autolink-headings",
+        "rehype-infer-reading-time-meta",
+      ],
     },
   },
 
@@ -101,4 +104,6 @@ export default defineNuxtConfig({
   gtag: {
     id: "G-437EGHNNRF",
   },
+
+  compatibilityDate: "2024-07-30",
 });

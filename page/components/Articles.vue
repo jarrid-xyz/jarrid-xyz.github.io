@@ -1,5 +1,5 @@
 <template>
-  <v-container class="page fill-height page pt-extra">
+  <v-container class="page fill-height page pt-extra pb-15">
     <v-row>
       <v-col cols="12">
         <span class="text-h2">Articles</span>
@@ -15,7 +15,8 @@
                 {{ article.title }}
               </v-card-title>
               <v-card-subtitle>
-                By {{ article.author }} on {{ formatDate(article.date) }}
+                By {{ article.author }} on {{ formatDate(article.date) }} <br />
+                {{ Math.ceil(article.meta.readingTime[1]) }} min read
               </v-card-subtitle>
               <v-card-text>
                 {{ article.description }}
@@ -56,7 +57,7 @@ const formatDate = (date) => {
 
 defineExpose({
   getImageUrl,
-  formatDate
+  formatDate,
 });
 </script>
 
@@ -65,7 +66,7 @@ export default {
   name: "Articles",
   data() {
     return {
-      defaultImage: Logo
+      defaultImage: Logo,
     };
   },
   methods: {
@@ -80,8 +81,8 @@ export default {
         return 0;
       });
       return list;
-    }
-  }
+    },
+  },
 };
 </script>
 <style scoped>
