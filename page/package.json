@@ -23,6 +23,7 @@
     "nuxt-disqus": "^1.0.1",
     "nuxt-gtag": "^2.0.6",
     "rehype-autolink-headings": "^7.1.0",
+    "rehype-infer-reading-time-meta": "^2.0.0",
     "vue": "^3.4.29",
     "vue-router": "^4.3.3"
   },

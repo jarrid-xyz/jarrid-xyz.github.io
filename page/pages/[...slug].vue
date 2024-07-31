@@ -28,7 +28,7 @@
 <style>
 .markdown-body {
   p {
-    padding-bottom: 30px;
+    padding-bottom: 5px;
   }
 
   h1,
@@ -49,14 +49,20 @@
   ul {
     list-style-position: outside;
     margin-left: 20px;
+    margin-bottom: 20px;
   }
 
   img {
+    margin-top: 20px;
     max-width: 100%;
   }
 
   table {
     border-collapse: collapse;
+    display: block;
+    overflow-y: scroll;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   table td {
     padding: 5px;
@@ -73,6 +79,25 @@
   }
   table tbody tr:nth-child(odd) {
     background-color: #f9fafb;
+  }
+
+  blockquote {
+    width: 100%;
+    margin-bottom: 30px;
+    font-style: italic;
+    color: #000000;
+    padding: 10px 30px 0px 60px;
+    border-left: 8px solid #78c0a8;
+    position: relative;
+  }
+
+  blockquote::before {
+    content: "\201C";
+    color: #78c0a8;
+    font-size: 3em;
+    position: absolute;
+    left: 10px;
+    top: -10px;
   }
 }
 
