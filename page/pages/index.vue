@@ -24,7 +24,7 @@
   </v-container>
   <NextButtonWrappedForMobile :el="articlesRef" />
   <v-container class="full-size min-height" ref="articles" id="articles">
-    <Articles />
+    <Articles :limit="5" />
   </v-container>
 </template>
 
