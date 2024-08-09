@@ -1,5 +1,5 @@
 ---
-title: "Step by step guide to remediate data vulnerability"
+title: "Step by Step Guide to Remediate Data Vulnerability"
 description: Data engineers, platform engineers, and security analysts -- learn how to remediate data vulnerabilities in cloud storage with our step-by-step tutorial.
 author: Lulu Cheng
 authorLink: https://l1990790120.github.io/about
