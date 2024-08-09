@@ -1,6 +1,6 @@
 ---
 title: "Keyper by Jarrid: Weekly Update [2024/08/09]"
-description: This week, we’ve introduced support for remote backend in GCS, file reading and writing, and a bug fix for key retrieval in Keyper. We’ve also released a new tutorial on full file encryption.
+description: Keyper v0.0.2 now support remote backend in GCS, direct file reading and writing, and a bug fix for key retrieval. We’ve also released a new tutorial on full file encryption.
 author: Lulu Cheng
 authorLink: https://l1990790120.github.io/about
 img: https://images.pexels.com/photos/13092796/pexels-photo-13092796.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
