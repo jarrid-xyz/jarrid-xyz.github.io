@@ -26,7 +26,7 @@
     </template>
     <template v-if="contact.subscribe">
       <div class="px-6">
-        <Subscribe />
+        <Subscribe id="6c1ab5f4-5849-11ef-bf71-59031bd0151b" />
       </div>
     </template>
     <template v-if="contact.letstalk">
