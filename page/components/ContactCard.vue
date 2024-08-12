@@ -41,11 +41,11 @@ export default {
   name: "ContactCard",
   props: {
     contact: {
-      type: Object
+      type: Object,
     },
     socials: {
-      type: Array
-    }
-  }
+      type: Array,
+    },
+  },
 };
 </script>

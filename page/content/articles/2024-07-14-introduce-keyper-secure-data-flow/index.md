@@ -58,6 +58,3 @@ Stay tuned for these exciting updates and more as we continue to enhance [Keyper
 This week, [Snowflake data breach continues to impact all major companies](https://www.cnbc.com/2024/07/12/snowflake-shares-slip-after-att-says-hackers-accessed-data.html).
 
 While it's challenging to determine precisely what could have prevented the breach, implementing an additional layer like the [Direct AES + ACLs Encryption Flow](https://jarrid.xyz/keyper/data/secure-data-flow/#direct-aes-acls-encryption-flow) could have mitigated the risk by preventing unauthorized access to raw data.
-
-::LetsTalkAndSubscribe{ctaText="Trying to improve data security implementation to your internal data infrastructure? We'd love to help. Talk to us now."}
-::

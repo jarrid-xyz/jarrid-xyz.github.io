@@ -9,20 +9,21 @@ export default {
   props: {
     text: {
       type: String,
-      default: ""
-    }
+      default: "",
+    },
+    id: {
+      type: String,
+      default: "",
+    },
   },
 
   mounted() {
     const plugin = document.createElement("script");
-    plugin.setAttribute(
-      "src",
-      "https://eocampaign1.com/form/65f5c51c-31dc-11ef-99a7-4d1c46d3528b.js"
-    );
-    plugin.setAttribute("data-form", "65f5c51c-31dc-11ef-99a7-4d1c46d3528b");
+    plugin.setAttribute("src", `https://eocampaign1.com/form/${this.id}.js`);
+    plugin.setAttribute("data-form", this.id);
     plugin.async = true;
     this.$refs.email.appendChild(plugin);
-  }
+  },
 };
 </script>
 

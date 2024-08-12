@@ -10,9 +10,6 @@ tags: ["Announcement", "Release"]
 
 [Keyper](https://github.com/jarrid-xyz/keyper) is a powerful multi-platform Kotlin (Java) based CLI tool designed to simplify crypto key management and deployment with just a few commands. Think of Keyper as the Stripe for crypto keys. Every week, we introduce new features to help make security easier for developers and engineers worldwide.
 
-::LetsTalkAndSubscribe{ctaText="Are you working on Fintech, Crypto or Healthcare projects? We'd love to help. Talk to us now."}
-::
-
 ## Feature Release
 
 1. [Keyper](https://github.com/jarrid-xyz/keyper/) is now containerized. You can run it from anywhere: laptops, Kubernetes, or any CI/CD pipelines, all with the same simple configuration.
