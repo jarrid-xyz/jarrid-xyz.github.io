@@ -58,6 +58,3 @@ With data encryption, access is configured once with a crypto key and can then b
 ## Let Keyper Up Your Data Encryption Game
 
 [Keyper by Jarrid](https://jarrid.xyz/keyper){:target="_blank"} empowers engineering teams to embed data encryption in any data handling process to streamline security implementation. Keyper offers a suite of crypto key management APIs designed to simplify key creation, management, deployment, and encryption/decryption. By integrating with cloud KMS services like AWS KMS and GCP KMS, Keyper enables managed crypto key generation, reducing infrastructure maintenance. This allows organizations to configure encryption once and apply it consistently across all stages of the data flow, ensuring robust security while simplifying governance and operational processes.
-
-::LetsTalkAndSubscribe{ctaText="Trying to improve data security implementation in your internal data infrastructure? We'd love to help. Talk to us now."}
-::

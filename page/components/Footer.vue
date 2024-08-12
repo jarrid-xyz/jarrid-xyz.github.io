@@ -3,7 +3,7 @@
     <v-row class="full-width no-gutter">
       <v-col cols="12" md="3" class="text-start white--text">
         <p class="text-h6 ml-1 font-weigiht-black">Get In Touch</p>
-        <Subscribe />
+        <Subscribe id="b185c15a-584a-11ef-8ab2-d9e464d8127c" />
       </v-col>
       <v-col cols="8" class="pl-0">
         <v-row>
