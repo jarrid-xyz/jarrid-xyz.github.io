@@ -14,8 +14,6 @@ We’re excited to announce [Keyper v0.0.2 release](https://github.com/jarrid-xy
 
 We've added several important features in this release to make [Keyper](https://jarrid.xyz/keyper){target="_blank"} a cloud and production ready library.
 
-
-
 ### 1. Support for Remote Backend in GCS
 
 We’ve added support for [Terraform remote backend](https://developer.hashicorp.com/terraform/language/settings/backends/remote){target="_blank"} in [Google Cloud Storage (GCS)](https://cloud.google.com/storage){target="_blank"}. This allows you to store and manage [Terraform state](https://developer.hashicorp.com/terraform/language/state){target="_blank"} remotely and share across CI/CD pipelines. With this update, you can embed [Keyper](https://jarrid.xyz/keyper){target="_blank"} in your infrastructure as code workflows.
