@@ -1,6 +1,6 @@
 ---
 title: "Data Security Strategy Beyond Access Control: Data Encryption"
-description:  data encryption can enhance your security strategy, simplify system architecture, and provide lasting protection against breaches.
+description: Data encryption can enhance your security strategy, simplify system architecture, and provide better protection against data security vulnerabilities.
 authorLink: https://l1990790120.github.io/about{target="_blank"}
 img: images/post.jpg
 date: 2024-08-27
