@@ -1,6 +1,6 @@
 ---
 title: "Secure Data Stack: Address Data Encryption Challenges"
-description: Enhance data security with a phased approach, focusing on areas like field-level and whole file encryption. This method allows you to adopt data encryption while minimizing disruptions to day-to-day operations.
+description: Enhance data security with a phased approach, focusing on areas like field-level and whole file encryption. Adopt data encryption while minimizing disruptions to day-to-day operations.
 author: Lulu Cheng
 authorLink: https://l1990790120.github.io/about
 img: https://images.pexels.com/photos/22610370/pexels-photo-22610370/free-photo-of-smart-home-automation.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
