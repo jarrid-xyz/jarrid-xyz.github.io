@@ -29,7 +29,7 @@
         </div>
       </v-col>
       <v-col cols="12" class="demo-video">
-        <youtube-video
+        <Youtube
           src="https://www.youtube.com/embed/0ut4KVRdKgM?controls=0&modestbranding=1&showinfo=0&rel=0"
         />
       </v-col>
