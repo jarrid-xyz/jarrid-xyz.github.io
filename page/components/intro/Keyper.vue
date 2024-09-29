@@ -28,15 +28,10 @@
           </v-btn>
         </div>
       </v-col>
-      <v-col cols="12">
-        <div class="demo-video">
-          <iframe
-            src="https://www.youtube.com/embed/0ut4KVRdKgM?si=LFEVIEo3V8pgH8lG&controls=0&modestbranding=1&showinfo=0&rel=0"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-          ></iframe>
-        </div>
+      <v-col cols="12" class="demo-video">
+        <Youtube
+          src="https://www.youtube.com/embed/0ut4KVRdKgM?controls=0&modestbranding=1&showinfo=0&rel=0"
+        />
       </v-col>
     </v-row>
   </v-container>
@@ -86,13 +81,5 @@ export default {
   padding-bottom: 100%;
   padding-top: 25px;
   height: 0;
-}
-
-.demo-video iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 </style>

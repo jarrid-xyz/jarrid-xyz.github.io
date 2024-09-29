@@ -25,7 +25,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-/* Your component's styles go here */
-</style>
