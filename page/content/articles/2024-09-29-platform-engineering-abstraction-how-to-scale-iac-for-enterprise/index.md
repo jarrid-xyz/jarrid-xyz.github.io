@@ -10,13 +10,13 @@ tags: ["Platform Engineering", "Architecture", "IaC", "DevOps", "CI/CD", "Scalab
 
 Infrastructure as code (IaC) has become increasingly challenging as organization and usage scale. Inconsistent configurations, security gaps, increasing costs remain to be hard to manage without the right level of abstraction, but what's the right level of abstraction?
 
-![](images/dev-velocity-vs-abstraction.png)
-
 ## From DevOps to Infrastructure as Code
 
-DevOps started with engineers clicking around the AWS console and writing scripts to automate tasks like creating EC2 instances and setting up VPCs, but as usage grew, Infrastructure as Code (IaC) tools such as terraform and CloudFormation emerged. Instead of writing shell scripts, infrastructure engineers can write declarative code to define how the cloud resources should be deployed. This is a great step up in terms of abstraction from the one-off automation scripts. On one hand, the declarative nature of the IaC tools makes it easy enough for most developers to write (you can think of it as configuration instead of code); on the other, it's not **abstracted** enough to give platform engineers the ability to write modularized code for developers to create infrastructure across the organization.
+DevOps started with engineers clicking around the AWS console and writing scripts to automate tasks like creating EC2 instances and setting up VPCs, but as usage grew, Infrastructure as Code (IaC) tools such as terraform and CloudFormation emerged. Instead of writing shell scripts, infrastructure engineers can write declarative code to define how the cloud resources should be deployed. This is a great step up in terms of abstraction from the one-off automation scripts. On one hand, the declarative nature of the IaC tools makes it easy enough for most developers to write (you can think of it as configuration instead of code); on the other, it's not abstracted enough to give platform engineers the ability to write modularized code for developers to create infrastructure across the organization.
 
 Take resource tagging for example, for both cost tracking and governance purposes, it's a very common use case to want to tag cloud resources by application, team, business unit, cost center etc. With terraform, application engineers need to manually specify these tags for each resource. Even if platform engineering teams create the relevant terraform "tag" module to enforce common fields, application engineers still need to provide the tag values every time. The declarative nature of IaC makes it hard for platform engineering teams to automatically populate these tag values from a central registry of applications and teams. This becomes especially problematic as the number of resources and size of organization grows.
+
+![](images/dev-velocity-vs-abstraction.png)
 
 This led to the next question: how can we create a higher level of abstraction on top of IaC that addresses these enterprise-scale challenges?
 
