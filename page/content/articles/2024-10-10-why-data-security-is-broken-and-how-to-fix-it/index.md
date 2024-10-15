@@ -52,7 +52,7 @@ We've created [Keyper](https://jarrid.xyz/keyper) to take a new approach to addr
 
 2. Generic Encryption Library
    
-   [Keyper](https://jarrid.xyz/keyper) is a generic data-in-use encryption library that can be integrated at various points in the data lifecycle. The library can encrypt and decrypt data in-use across different platforms and use cases such as streaming, batch processing and ci/cd pipelines. With integrations to data platforms such as Kafka, Spark and ci/cd pipelines such [Github Actions](https://github.com/marketplace/actions/keyper-action), developers can implement encryption and decryption as part of the development process.
+   [Keyper](https://jarrid.xyz/keyper) is a generic object-level and field-level encryption library that can be integrated at various points in the data lifecycle. The library can encrypt and decrypt data across different platforms and use cases such as streaming, batch processing and ci/cd pipelines. With integrations to data platforms such as Kafka, Spark and ci/cd pipelines such [Github Actions](https://github.com/marketplace/actions/keyper-action), developers can implement encryption and decryption as part of the development process.
 
 ## Security as Enabler
 
