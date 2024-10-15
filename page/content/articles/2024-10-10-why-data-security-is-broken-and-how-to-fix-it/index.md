@@ -3,7 +3,7 @@ title: Why Data Security is Broken and How to Fix it?
 description: "We can all agree that data security is broken. Even if developers are tasked to fix it, they have limited resources and toolings available to them. How can we fix this?"
 author: Lulu Cheng
 authorLink: https://l1990790120.github.io/about
-img: images/data-security-work.png
+img: https://images.pexels.com/photos/1769739/pexels-photo-1769739.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
 date: 2024-10-10
 tags: ["Platform Engineering", "Data Engineering", "DevOps", "CI/CD", "Data Security", "App Security"]
 ---
