@@ -30,9 +30,9 @@ Today, data security implementation is shared across these three teams, often re
 
 ## What Data Security Can Learn from App Security
 
-Scanning and remediation aren't new concepts in software security. Take app security for example: tools like SonarQube and CVE scans have existed for more than a decade (yes, we didn't need AI for that). Companies like Snyk, Arcjet, and GitHub's Dependabot have taken a more developer-centric approach, creating easy-to-use tools that integrate security into the development process. This makes security a natural part of coding.
+Scanning and remediation aren't new concepts in software security. Take app security for example: tools like SonarQube and CVE scans have existed for more than a decade (yes, we didn't need AI for that). Companies like [Snyk](https://snyk.io/), [Arcjet](https://arcjet.com/), and [GitHub's Dependabot](https://github.com/dependabot) have taken a more developer-centric approach, creating easy-to-use tools that integrate security into the development process. This makes security a natural part of coding.
 
-Data security tools like Amazon Macie, Google Cloud DLP, and platforms like Wiz, BigID, Varonis, and Imperva offer scanning capabilities. However, they often lack automated or retroactive remediation, with existing options typically tied to the platform and inaccessible to most developers.
+Data security tools like [Amazon Macie](https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html), [Google Cloud DLP](https://cloud.google.com/security/products/dlp), and platforms like [Wiz](https://www.wiz.io/), [BigID](https://bigid.com/), [Varonis](https://www.varonis.com/), and [Imperva](https://www.imperva.com/) offer scanning capabilities. However, they often lack automated or retroactive remediation, with existing options typically tied to the platform and inaccessible to most developers.
 
 While we know there's an issue and how to fix it, if the work isn't automated, vulnerability remediation hardly makes it to the prioritization board alongside feature work, tech debt, and KLOs. This narrative can change if we give platform engineers the tools and automation they need to address security issues efficiently and proactively.
 
@@ -42,25 +42,24 @@ To effectively address data security issues, developers need tools that not only
 
 Today, many data security platforms run scans against data lakes and infrastructure and flag unencrypted sensitive data stored on S3 bucket. The security analyst then tag the platform engineer to delete the file. The flag keeps coming back as existing data pipelines continue to write sensitive information to the bucket and the real fix is on data engineering teams to properly implement encryption. This often becomes a game of “whack-a-mole” fixes, yet the root remains unaddressed.
 
-We've created Keyper to address the tooling gap in two main areas:
+We've created [Keyper](https://jarrid.xyz/keyper) to take a new approach to address the gap:
 
 1. Security Aware Data Metadata
    
-   Data schema formats such as Avro and JSON currently lack built-in support for data sensitivity or security-aware metadata. Additionally, common formats like Parquet and Iceberg, while efficient for storing large datasets, don’t natively include security-aware metadata. At Jarrid, we are exploring various metadata formats to incorporate data sensitivity and security-aware attributes that can be easily tracked at the data lake, file, and even down to the field level.
+   Data schema formats such as [Avro](https://avro.apache.org/) and [Json](https://json-schema.org/) currently lack built-in support for data sensitivity or security-aware metadata. Additionally, common formats like Parquet and Iceberg, while efficient for storing large datasets, don’t natively include security-aware metadata. At [Jarrid](https://jarrid.xyz/), we are exploring various metadata formats to incorporate data sensitivity and security-aware attributes that can be easily tracked at the data lake, file, and even down to the field level.
 
     By tagging security-aware metadata directly into the data schema, tracking encryption keys and enforcing security policies across data pipelines and storage becomes easier. Currently, Keyper makes encryption key permissions configuration-driven and trackable, ensuring that encryption keys and their access rules are well-managed, version-controlled, and easy to audit.
 
 2. Generic Encryption Library
    
-   Keyper is a generic data-in-use encryption library that can be integrated at various points in the data lifecycle. The library can encrypt and decrypt data in-use across different platforms and use cases such as streaming, batch processing and ci/cd pipelines. With integrations to data platforms such as Kafka, Spark and ci/cd pipelines such [Github Actions](https://github.com/marketplace/actions/keyper-action), developers can implement encryption and decryption as part of the development process.
+   [Keyper](https://jarrid.xyz/keyper) is a generic data-in-use encryption library that can be integrated at various points in the data lifecycle. The library can encrypt and decrypt data in-use across different platforms and use cases such as streaming, batch processing and ci/cd pipelines. With integrations to data platforms such as Kafka, Spark and ci/cd pipelines such [Github Actions](https://github.com/marketplace/actions/keyper-action), developers can implement encryption and decryption as part of the development process.
 
 ## Security as Enabler
 
 Enablement is more effective than limitation, and security is no exception. The barrier from reactive to proactive data security is steep, and without the right developer tools and automation, there’s no end in sight to data breaches. The most effective way to make this transition is by giving developers the tools and automation they need to solve security problems as part of their existing workflows, instead of as an afterthought.
 
-Most companies today are already overwhelmed by the number of alerts, processes, and compliance requirements they must meet. Innovation from existing engineering teams can be challenging. However, at Jarrid, we continue to experiment with data security tools that enable data, platform, and security teams to move faster together while staying secure. By automating remediation and embedding security into the development process, we can simplify compliance and help organizations proactively address data vulnerabilities.
+Most companies today are overwhelmed by the number of alerts, processes, and compliance requirements they must meet. Innovation from existing engineering teams can be challenging. However, at [Jarrid](https://jarrid.xyz/), we continue to experiment with data security tools that enable data, platform, and security teams to move faster together while staying secure. By automating remediation and embedding security into the development process, we can simplify compliance and help organizations proactively address data vulnerabilities.
 
 ## Summary
 
-We'd love to learn about the data security challenges your organization faces and how can continue to extend Keyper to help you transition into proactive data security. 
-
+As we continue to experiment with developer tools that can both mitigate risks and increase developer velocity, we'd love to learn about the data security challenges your developers face and how can continue to build [Keyper](https://jarrid.xyz/keyper) to help organizations transition into proactive data security. 
