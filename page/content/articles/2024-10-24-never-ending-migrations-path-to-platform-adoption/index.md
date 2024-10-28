@@ -1,6 +1,6 @@
 ---
 title: "End the Never-ending Migrations: Platform Adoption Economics Explained"
-description: "A practical discussion to platform engineering: when to standardize, when to let teams build custom, and how to avoid the cycle of never-ending migrations."
+description: "A practical discussion on platform adoption: when to standardize, when to build custom, and how to avoid the never-ending cycle of migrations."
 author: Lulu Cheng
 authorLink: https://l1990790120.github.io/about
 img: https://images.pexels.com/photos/10451773/pexels-photo-10451773.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
