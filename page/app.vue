@@ -50,7 +50,13 @@ useHead(
 
 .full-size {
   min-height: 100vh;
+
   width: 100% !important;
+
+  @media (min-width: 1024px) {
+    width: 100vw !important;
+  }
+
   max-width: unset;
 }
 </style>
