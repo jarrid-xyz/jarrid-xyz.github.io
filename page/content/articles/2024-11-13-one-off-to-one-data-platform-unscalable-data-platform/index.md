@@ -3,7 +3,7 @@ title: "One Off to One Data Platform: The Unscalable Data Platform [Part 1]"
 description: "While data tools today are more powerful than ever, most organizations still find data platforms complex and costly to maintain.  What's wrong with how we build data platforms today?"
 author: Lulu Cheng
 authorLink: https://l1990790120.github.io/about
-img: https://images.pexels.com/photos/10451773/pexels-photo-10451773.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
+img: https://images.pexels.com/photos/8923956/pexels-photo-8923956.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
 date: 2024-11-13
 tags: ["Platform Engineering", "Data Platform", "Product Management", "Analysis", "One Off to One Data Platform"]
 ---
