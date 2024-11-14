@@ -1,7 +1,7 @@
 <template>
   <v-card flat rounded="0" class="min-width">
-    <v-img cover :src="post.img ? post.img : Logo" />
-    <v-card-title class="text-h3 text-wrap px-0">
+    <v-img cover :src="post.img ? post.img : Logo" class="image" />
+    <v-card-title class="text-h4 text-wrap px-0">
       {{ post.title }}
     </v-card-title>
     <v-card-subtitle class="text-subtitle-1 px-0">
@@ -20,8 +20,8 @@
 </template>
 
 <script setup>
-import Logo from "~/assets/images/og_image_wide_large_1.png";
 import moment from "moment";
+import Logo from "~/assets/images/og_image_wide_large_1.png";
 
 const props = defineProps({
   url: {
@@ -85,6 +85,14 @@ export default {
 
   .min-width {
     min-width: 1024px;
+  }
+}
+
+.image {
+  max-height: 150px;
+
+  @media (min-width: 1024px) {
+    max-height: 60vh;
   }
 }
 </style>

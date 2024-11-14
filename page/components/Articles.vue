@@ -5,10 +5,7 @@
         <span class="text-h2">Articles</span>
       </v-col>
       <ContentList path="/articles" v-slot="{ list }">
-        <template
-          v-for="article in limitArticles(sortByDate(list))"
-          :key="article._path"
-        >
+        <template v-for="article in limitArticles(sortByDate(list))" :key="article._path">
           <v-col cols="12" md="4" v-if="article.visible != false">
             <v-card :to="{ path: article._path }" class="article text-black">
               <div class="image">
@@ -48,8 +45,8 @@
 </template>
 
 <script setup>
-import Logo from "~/assets/images/og_image_wide_large_1.png";
 import moment from "moment";
+import Logo from "~/assets/images/og_image_wide_large_1.png";
 
 const getImageUrl = (img) => {
   return new URL(img, import.meta.url);
