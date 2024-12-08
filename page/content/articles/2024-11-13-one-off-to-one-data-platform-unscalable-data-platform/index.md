@@ -34,6 +34,6 @@ For most large systems, it's almost always easier and cheaper if you know what y
 
 ## Coming Up Next
 
-In Part 2 of the "One Off to One Data Platform" series, we'll lay out a design framework for data platforms based on common business use cases. By defining data components and time-based requirements per use case, we can systematically derive what a production system needs - from compliance and security controls to infrastructure components to integration capabilities.
+In [Part 2 of the "One Off to One Data Platform"](/articles/2024-11-30-one-off-to-one-data-platform-design-with-intent) series, we'll lay out a design framework for data platforms based on common business use cases. By defining data components and time-based requirements per use case, we can systematically derive what a production system needs - from compliance and security controls to infrastructure components to integration capabilities.
 
 With a framework, teams can leverage existing platform components for new use cases instead of bootstrapping infrastructure from scratch each time. This approach not only reduces technical complexity, operational burden, and infrastructure costs, but enables organizations to quickly adapt to evolving business needs.
